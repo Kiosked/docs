@@ -3,3 +3,4 @@
    * [Introduction](script/introduction.md)
      * [Dynamic script](script/introduction_dynamic.md)
      * [Static tag](script/introduction_statictag.md)
+   * [Blocking ad placements](script/blocking_ads.md)
