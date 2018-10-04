@@ -1,0 +1,5 @@
+ * [Kiosked PMP Documentation](README.md)
+ * [Publisher monetization script](script/index.md)
+   * [Introduction](script/introduction.md)
+     * [Dynamic script](script/introduction_dynamic.md)
+     * [Static tag](script/introduction_statictag.md)
