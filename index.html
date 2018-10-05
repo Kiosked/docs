@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Kiosked Documentation</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
   <style type="text/css">
     .app-name-link img {
       width: 64px;
@@ -16,13 +17,28 @@
 </head>
 <body>
   <div id="app"></div>
+  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script>
+    mermaid.initialize({ startOnLoad: false });
+
     window.$docsify = {
-      name: 'kiosked_documentation',
-      repo: '',
-      loadSidebar: true,
-      logo: "/_media/kiosked.png",
-      themeColor: "#01b1c6"
+        markdown: {
+            renderer: {
+                code: function(code, lang) {
+                    if (lang === "mermaid") {
+                        return (
+                            '<div class="mermaid">' + mermaid.render(lang, code) + "</div>"
+                        );
+                    }
+                    return this.origin.code.apply(this, arguments);
+                }
+            }
+        },
+        name: 'kiosked_documentation',
+        repo: '',
+        loadSidebar: true,
+        logo: "/_media/kiosked.png",
+        themeColor: "#01b1c6"
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>

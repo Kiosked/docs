@@ -9,6 +9,13 @@ Dynamic scripts offer a huge efficiency gain over [static tags](script/introduct
 
 Placement locations are identified by provided configurations embedded within each script. Locations where placements are created are simply [CSS selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors) that describe _which elements_ should have ads created on or near them.
 
+```mermaid
+graph TB;
+  script["Script"]-.->p1["Placement 1"]
+  script-.->p2["Placement 2"]
+  script-.->p3["Placement 3"]
+```
+
 For example, the selector `.content p` would tell the script that every `<p>` tag within the `.content` element should be selected for ad creation. Other rules will configure the frequency and maximum number of banners.
 
 > Changing the theme or layout of a site can affect Kiosked dynamic scripts in that placements may no longer be created after the change. This is of course dependent on the scale of the change and what the structure is after the update. It is imperative to notify Kiosked staff immediately if this has occurred, but of course prior notice is preferrable.
