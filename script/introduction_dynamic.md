@@ -11,9 +11,12 @@ Placement locations are identified by provided configurations embedded within ea
 
 ```mermaid
 graph TB;
-  script["Script"]-.->p1["Placement 1"]
-  script-.->p2["Placement 2"]
-  script-.->p3["Placement 3"]
+  script["Script"]-.->e1["Element 1"]
+  script-.->e2["Element 2"]
+  script-.->e3["Element 3"]
+  e1-.->p1["Placement 1"]
+  e2-.->p2["Placement 2"]
+  e3-.->p3["Placement 3"]
 ```
 
 For example, the selector `.content p` would tell the script that every `<p>` tag within the `.content` element should be selected for ad creation. Other rules will configure the frequency and maximum number of banners.
