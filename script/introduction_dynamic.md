@@ -29,7 +29,35 @@ It is desirable to place the dynamic script within the `<head>` block. While som
 
 If it simply isn't possible to place the script within the head block, placing it in the `<body>` towards the bottom is fine.
 
-It is **not recommended** to inject this script using DFP or any other loader.
+### Injection via an ad server
+
+It is **not recommended** to inject this script using DFP or any other loader or ad server. That being said, if there isn't another alternative the dynamic script can be injected via an ad server (such as DFP) if:
+
+ * No safe-frames are used
+ * The ad server allows access to the top frame of the page
+
+Injection can be achieved by writing the script from a **1x1** ad server placement into the top frame of the page, using a script like the following (provided by Kiosked):
+
+```html
+<!-- Begin Kiosked (DFP) -->
+<script type="text/javascript">
+(function(s, w) {
+  s.setAttribute("async", "async");
+  s.setAttribute("type", "text/javascript");
+  s.setAttribute("src", "//scripts.kiosked.com/loader/kiosked-loader.js?site=DYNAMICID");
+  w.document.body.appendChild(s);
+})(window.top.document.createElement("script"), window.top);
+</script>
+<!-- End Kiosked (DFP) -->
+```
+
+Notice the call to `w.document.body.appendChild(s)`, where the dynamic script is written to the top frame's `<body>`.
+
+## Configuration
+
+The dynamic script is configured by Kiosked staff and can be set up to create a variety of different placement opportunities with many different configurations. Once a dynamic script has been deployed to a site, there is usually nothing more required in terms of implementation from the publisher side. Requests can be made to Kiosked for additional units or alternate configurations without the need for additional tags to be deployed.
+
+In this way, Kiosked operates similar to a managed ad server, but without the need for templates.
 
 ## Compatibility
 
