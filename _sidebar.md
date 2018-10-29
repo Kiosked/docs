@@ -5,3 +5,4 @@
      * [Static tag](script/introduction_statictag.md)
    * [Blocking ad placements](script/blocking_ads.md)
    * [SecureMode](script/securemode.md)
+   * [API](script/api.md)
