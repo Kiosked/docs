@@ -11,5 +11,7 @@ When running a [dynamic script](script/introduction_dynamic.md), the API can be 
 The following methods are available:
 
  * `Kiosked.API`
+   * [`getPlacementIDs`](script/api_getplacementids.md)
+   * [`getPlacementInfo`](script/api_getplacementinfo.md)
    * [`onElementInteraction`](script/api_onelementinteraction.md)
    * [`onElementsInteraction`](script/api_onelementsinteraction.md)
