@@ -1,0 +1,20 @@
+{
+  "name": "docs",
+  "version": "0.0.0",
+  "description": "Kiosked docs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "docsify serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kiosked/docs.git"
+  },
+  "author": "Perry Mitchell <perry@kiosked.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Kiosked/docs/issues"
+  },
+  "homepage": "https://github.com/Kiosked/docs#readme",
+  "private": true
+}
