@@ -7,3 +7,6 @@
    * [SecureMode](script/securemode.md)
    * [AMP Ads](script/amp_ads.md)
    * [API](script/api.md)
+   * [Debugging](script/debugging.md)
+     * [Reporting issues](script/debugging_reporting.md)
+     * [Network logs using HAR files](script/debugging_har.md)
