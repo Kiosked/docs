@@ -28,7 +28,3 @@ AMP ads are much simpler, and the example above will end up looking like the fol
 ```
 
 Notice the `width` and `height` properties: These must be set to the correct size as instructed by Kiosked. Setting these values incorrectly will result in incorrectly displayed ads and potential loss of revenue.
-
-### Current Limitations
-
-Currently only 1 Kiosked AMP ad can be present on a page at any one time. This is a limitation of our current AMP integration and may be updated in the near future.
