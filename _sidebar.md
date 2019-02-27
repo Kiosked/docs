@@ -18,3 +18,4 @@
    * [Debugging](script/debugging.md)
      * [Reporting issues](script/debugging_reporting.md)
      * [Network logs using HAR files](script/debugging_har.md)
+   * [Extension](script/browserextension.md)
