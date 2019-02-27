@@ -3,6 +3,7 @@
    * [Introduction](script/introduction.md)
      * [Dynamic script](script/introduction_dynamic.md)
      * [Static tag](script/introduction_statictag.md)
+   * [Placement Types](script/placementtypes.md)
    * [Blocking ad placements](script/blocking_ads.md)
    * [SecureMode](script/securemode.md)
    * [AMP Ads](script/amp_ads.md)
@@ -18,3 +19,4 @@
    * [Debugging](script/debugging.md)
      * [Reporting issues](script/debugging_reporting.md)
      * [Network logs using HAR files](script/debugging_har.md)
+ * [Placement Configurator Extension](extension/placementconfigurator.md)
