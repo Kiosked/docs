@@ -20,3 +20,4 @@
      * [Reporting issues](script/debugging_reporting.md)
      * [Network logs using HAR files](script/debugging_har.md)
  * [Placement Configurator Extension](extension/placementconfigurator.md)
+   * [Privacy Policy for Kiosked Extensions](extension/privacy-policy.md)
