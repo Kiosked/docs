@@ -28,3 +28,18 @@ AMP ads are much simpler, and the example above will end up looking like the fol
 ```
 
 Notice the `width` and `height` properties: These must be set to the correct size as instructed by Kiosked. Setting these values incorrectly will result in incorrectly displayed ads and potential loss of revenue.
+
+## Usage with other ad formats
+
+Kiosked AMP ads work fine with other unit styles, such as the [flying carpet](https://ampbyexample.com/components/amp-fx-flying-carpet/) format. You can simply nest the Kiosked `amp-ad` element within the unit in most cases:
+
+```html
+<amp-fx-flying-carpet height="300px">
+  <amp-ad
+    width="300"
+    height="600"
+    type="kiosked"
+    data-scriptid="STATICTAGID">
+  </amp-ad>
+</amp-fx-flying-carpet>
+```
