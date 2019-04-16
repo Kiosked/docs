@@ -3,6 +3,7 @@
    * [Introduction](script/introduction.md)
      * [Dynamic script](script/introduction_dynamic.md)
      * [Static tag](script/introduction_statictag.md)
+     * [Placements](script/introduction_placements.md)
    * [Placement Types](script/placementtypes.md)
    * [Blocking ad placements](script/blocking_ads.md)
    * [SecureMode](script/securemode.md)
