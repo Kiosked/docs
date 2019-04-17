@@ -9,7 +9,7 @@
    * [SecureMode](script/securemode.md)
    * [AMP Ads](script/amp_ads.md)
    * [API](script/api.md)
-     * [destroyPlacementsForIDs](script/api_destroyplacementsforids.md)
+     * [destroyPlacements](script/api_destroyplacements.md)
      * [disablePlacementRefreshing](script/api_disableplacementrefreshing.md)
      * [getBannerStatus](script/api_getbannerstatus.md)
      * [getPlacementIDs](script/api_getplacementids.md)
