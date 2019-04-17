@@ -1,9 +1,9 @@
-# destroyPlacementsForIDs
+# destroyPlacements
 
-Destroy an array of placements by their IDs. Assuming that you have some placement IDs, you can pass them to `destroyPlacementsForIDs` and they will be destroyed. `destroyPlacementsForIDs` returns a `Promise`.
+Destroy an array of placements by their IDs. Assuming that you have some placement IDs, you can pass them to `destroyPlacements` and they will be destroyed. `destroyPlacements` returns a `Promise`.
 
 ```javascript
-Kiosked.API.destroyPlacementsForIDs(["...", "..."]).then(() => {
+Kiosked.API.destroyPlacements(["...", "..."]).then(() => {
   console.log("All placements destroyed");
 });
 ```
