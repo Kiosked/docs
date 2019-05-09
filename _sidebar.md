@@ -17,6 +17,7 @@
      * [onElementInteraction](script/api_onelementinteraction.md)
      * [onElementsInteraction](script/api_onelementsinteraction.md)
      * [onPlacementClose](script/api_onplacementclose.md)
+   * [Compatibility](script/compatibility.md)
    * [Debugging](script/debugging.md)
      * [Reporting issues](script/debugging_reporting.md)
      * [Network logs using HAR files](script/debugging_har.md)
