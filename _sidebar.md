@@ -7,6 +7,7 @@
    * [Placement Types](script/placementtypes.md)
    * [Blocking ad placements](script/blocking_ads.md)
    * [SecureMode](script/securemode.md)
+   * [Ads.txt](script/ads_txt.md)
    * [AMP Ads](script/amp_ads.md)
    * [API](script/api.md)
      * [destroyPlacements](script/api_destroyplacements.md)
