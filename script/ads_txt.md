@@ -6,11 +6,9 @@ Ads.txt items are basically permissions for each demand source to _buy inventory
 
 ## ads.txt contents
 
-When creating your `ads.txt` file, enter the following contents:
+When creating your `ads.txt` file, enter the contents provided to you by your Kiosked contact. All `ads.txt` files are **unique** per client and cannot be shared. Please do not copy any `ads.txt` lines from any other site.
 
-[](https://kiosked.com/ads.txt ':include :type=iframe width=100% height=650px')
-
-You can copy & paste it from the box above. Make sure that you edit your `ads.txt` file with a **plain-text editor** so as to not corrupt the file with invalid formatting (Microsoft Word or Wordpad will usually not save in plain-text format and will usually result in corrupted `ads.txt` files).
+Make sure that you edit your `ads.txt` file with a **plain-text editor** so as to not corrupt the file with invalid formatting (Microsoft Word or Wordpad will usually not save in plain-text format and will usually result in corrupted `ads.txt` files).
 
 If you have existing contents in this file **not** from Kiosked, you can append Kiosked's items to the end of the file.
 
