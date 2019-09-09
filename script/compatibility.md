@@ -6,6 +6,21 @@ As the Kiosked script is usually run in a shared environment, potentially alongs
 
 If you already use Google ad demand on your site, you'll most likely be initiating calls to Google via Google Ad Manager (formerly DFP). As Kiosked scripts also provide Google ad demand, there are a few rare issues that may occur when running both side-by-side.
 
+### GPT refreshing
+
+Google ads can be refreshed using the `googletag.pubads().refresh()` command. This method has far-reaching effects if it is not used properly. Calling this method **without arguments** will refresh all Google units on a page, including any created by Kiosked. While this usually isn't an issue if only your Google ads are running on a page, using this method without arguments makes it difficult or potentially impossible for third parties to use their own monetisation systems if they include Google demand. Refreshing third party ads can have a negative outcome on overall monetisation by way of refreshing _too_ often (if the third party, such as Kiosked, also refresh their ads). Such behaviour can eventually result in the blacklisting of a publisher account, in the worse circumstances.
+
+It is therefore recommended not to make calls to `refresh()` without first providing the **slots** with which to refresh, like so:
+
+```javascript
+var slot1 = googletag.defineSlot("/1234/abc-123", [[728, 90]], "ad1"),
+    slot2 = googletag.defineSlot("/1234/abc-456", [[728, 90]], "ad2");
+// Later:
+googletag.pubads().refresh([ slot1, slot2 ]);
+```
+
+Being specific with slot references is a great way to ensure that there are no side effects when integrating other ad services.
+
 ### Sync Rendering
 
 The GPT API provides a method called [`enableSyncRendering`](https://developers.google.com/doubleclick-gpt/reference#googletag.PubAdsService_enableSyncRendering), which is usually called as follows:
