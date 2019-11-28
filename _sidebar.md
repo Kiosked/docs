@@ -10,6 +10,7 @@
    * [Consent Management](script/consent.md)
    * [Ads.txt](script/ads_txt.md)
    * [AMP Ads](script/amp_ads.md)
+     * [How AMP works](script/amp_ads_how-they-work.md)
    * [API](script/api.md)
      * [destroyPlacements](script/api_destroyplacements.md)
      * [disablePlacementRefreshing](script/api_disableplacementrefreshing.md)
