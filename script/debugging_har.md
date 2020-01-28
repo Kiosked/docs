@@ -37,3 +37,5 @@ If the file is still simply too big to send (typically 10mb is the maximum you c
 You can preview the HAR file yourself if you like. Essentially the gigantic file is just text, but it contains many hundreds or thousands of blocks of request information which may be unwieldy in a text editor. Try an [online HAR viewer](https://ericduran.github.io/chromeHAR/) so that you can get a visual representation of the activity.
 
 If you'd prefer a native application with which to peruse and debug HAR files with, try [Charles Proxy](https://www.charlesproxy.com/) (Paid).
+
+WIP...
